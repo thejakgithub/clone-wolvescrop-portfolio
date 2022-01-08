@@ -15,4 +15,11 @@
 .img-port {
   border-radius: 1.5rem;
   cursor: pointer;
+  height: 237px !important;
+}
+
+@media screen and (min-width: 1280px) {
+  .img-port {
+    height: 288px !important;
+  }
 }

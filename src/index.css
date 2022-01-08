@@ -11,6 +11,10 @@ html {
   line-height: 1.2px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .btn-type {
   font-size: 14px;
   color: #ffffff;

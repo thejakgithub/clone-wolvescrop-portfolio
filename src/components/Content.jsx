@@ -22,7 +22,6 @@ export default function Content() {
                 <img
                   src={port.img}
                   alt={port.img}
-                  height={300}
                   className="img-fluid img-port  pe-2"
                 />
                 <h5 className="font-poppins portfoio-title my-3">
