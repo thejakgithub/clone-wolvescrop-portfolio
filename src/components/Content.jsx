@@ -6,7 +6,7 @@ export default function Content() {
   return (
     <main className="bg-header py-3">
       <div className="container text-white ">
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 mx-4 mx-lg-0">
           <h1 className="text-port-head mb-3">Portfolio</h1>
           <p className="text-port-des">
             Digital product consultant, focused on ux/ui & service <br />
@@ -17,12 +17,12 @@ export default function Content() {
         </div>
         <div className="row g-4">
           {portfolio.map((port) => (
-            <div key={port.id} className="col-lg-4 col-md-6 ">
-              <div className="text-center text-md-start">
+            <div key={port.id} className=" col-lg-4 col-md-6 ">
+              <div className="text-center text-md-start mx-1 mx-lg-0">
                 <img
                   src={port.img}
                   alt={port.img}
-                  className="img-fluid img-port  pe-2"
+                  className="img-fluid img-port  px-lg-0 pe-0 pe-md-2 "
                 />
                 <h5 className="font-poppins portfoio-title my-3">
                   {port.title}

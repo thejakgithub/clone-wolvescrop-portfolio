@@ -23,3 +23,15 @@
     height: 288px !important;
   }
 }
+
+@media screen and (max-width: 767.5px) {
+  .text-port-head {
+    font-size: 24px;
+  }
+  .img-port {
+    height: auto !important;
+  }
+  .text-port-des {
+    font-size: 14px;
+  }
+}
