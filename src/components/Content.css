@@ -1,0 +1,18 @@
+.text-port-des,
+.text-port-head {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.text-port-head {
+  font-size: 28px;
+}
+
+.text-port-des {
+  font-size: 18px;
+}
+
+.img-port {
+  border-radius: 1.5rem;
+  cursor: pointer;
+}

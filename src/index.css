@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed:wght@400;700&display=swap");
+body,
+html {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto Condensed", sans-serif !important;
+  font-size: 1rem !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0, 0, 0, 0.93);
+  letter-spacing: 1px;
+  line-height: 1.2px;
+}
+
+.btn-type {
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 0.4rem;
+  letter-spacing: 1px;
+  border: none;
+  cursor: auto !important;
+  font-family: "Poppins", sans-serif;
+}
+.btn-pink {
+  background-color: #e60e5f;
+}
+
+.btn-red {
+  background-color: #b2002b;
+}
+
+.btn-blue {
+  background-color: #056794;
+}
+
+.btn-sky {
+  background-color: #22a0c1;
+}
+.btn-yellow {
+  background-color: #ebcc08;
+}
+.btn-violet {
+  background-color: #5440a7;
+}
+.btn-purple {
+  background-color: #6f2cbb;
+}
+.btn-orange {
+  background-color: #d64f00;
+}
+.btn-moon {
+  background-color: #f2b716;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.portfoio-title {
+  font-size: 19px;
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1125px !important;
+  }
+}
