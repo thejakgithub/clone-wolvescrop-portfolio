@@ -30,6 +30,10 @@
   cursor: pointer;
   height: auto;
 }
+.img-port {
+  pointer-events: none;
+  user-select: none;
+}
 
 .img-hover {
   opacity: 1;
