@@ -19,11 +19,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-
   margin-left: 0.45rem;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  overflow: hidden;
 }
 .wrapper-img {
   position: relative;
@@ -54,5 +52,9 @@
   }
   .text-port-des {
     font-size: 14px;
+  }
+  .wrapper-img {
+    max-width: 360px;
+    margin: 0 auto;
   }
 }
