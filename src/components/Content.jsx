@@ -1,10 +1,12 @@
-import React from "react";
+import { useState } from "react";
 import "./Content.css";
 import portfolio from "../data/portfolio";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function Content() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <main className="bg-header py-3">
       <div className="container text-white ">
@@ -24,18 +26,20 @@ export default function Content() {
                 <div className="wrapper-img ">
                   <div className="img-hover ">
                     <LazyLoadImage
-                      className="img-fluid   px-lg-0 pe-0 pe-md-2 "
+                      className="img-fluid  px-lg-0 pe-0 pe-md-2 "
                       alt={port.img}
                       src={port.img}
                       effect="blur"
+                      afterLoad={() => setIsLoading(false)}
                     />
                   </div>
-
-                  <LazyLoadImage
-                    className="img-fluid  project-hover  px-lg-0 pe-0 pe-md-2 "
-                    alt="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
-                    src="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
-                  />
+                  {isLoading === false && (
+                    <LazyLoadImage
+                      className="img-fluid  project-hover  px-lg-0 pe-0 pe-md-2 "
+                      alt="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
+                      src="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
+                    />
+                  )}
                 </div>
 
                 <h5 className="font-poppins portfoio-title my-3">

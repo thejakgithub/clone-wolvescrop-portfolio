@@ -16,6 +16,19 @@ html {
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: #cccccc;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 5px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #cccccc;
+}
+
 .btn-type {
   font-size: 14px;
   color: #ffffff;
@@ -62,19 +75,6 @@ html {
 
 .portfoio-title {
   font-size: 19px;
-}
-
-*::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
-  background-color: #cccccc;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: black;
-  border-radius: 5px;
-}
-*::-webkit-scrollbar-track {
-  background-color: #cccccc;
 }
 
 @media screen and (min-width: 1280px) {
