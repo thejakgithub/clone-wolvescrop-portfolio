@@ -58,3 +58,9 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .wrapper-img {
+    height: 278px;
+  }
+}
