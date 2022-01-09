@@ -26,7 +26,7 @@ export default function Content() {
                 <div className="wrapper-img  ">
                   <div className="img-hover ">
                     <LazyLoadImage
-                      className="img-fluid    px-lg-0 pe-0 pe-md-2 "
+                      className="img-fluid      "
                       alt={port.img}
                       src={port.img}
                       effect="blur"
@@ -35,7 +35,7 @@ export default function Content() {
                   </div>
                   {isLoading === false && (
                     <LazyLoadImage
-                      className="img-fluid    project-hover  px-lg-0 pe-0 pe-md-2 "
+                      className="img-fluid     project-hover    "
                       alt="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
                       src="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
                     />
