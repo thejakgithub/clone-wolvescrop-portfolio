@@ -1,6 +1,8 @@
 import React from "react";
 import "./Content.css";
 import portfolio from "../data/portfolio";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function Content() {
   return (
@@ -19,11 +21,13 @@ export default function Content() {
           {portfolio.map((port) => (
             <div key={port.id} className=" col-lg-4 col-md-6 ">
               <div className="text-center text-md-start mx-1 mx-lg-0">
-                <img
-                  src={port.img}
-                  alt={port.img}
+                <LazyLoadImage
                   className="img-fluid img-port  px-lg-0 pe-0 pe-md-2 "
+                  alt={port.img}
+                  src={port.img}
+                  effect="blur"
                 />
+
                 <h5 className="font-poppins portfoio-title my-3">
                   {port.title}
                 </h5>
