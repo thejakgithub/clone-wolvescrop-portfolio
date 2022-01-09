@@ -6,7 +6,7 @@ html {
   font-size: 1rem !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(0, 0, 0, 0.93);
+  /* background-color: rgba(0, 0, 0, 0.93); */
   letter-spacing: 1px;
   line-height: 1.2px;
   scroll-behavior: smooth;

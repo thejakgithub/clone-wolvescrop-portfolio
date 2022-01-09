@@ -3,6 +3,7 @@ import "./Content.css";
 import portfolio from "../data/portfolio";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { Link } from "react-router-dom";
 
 export default function Content() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,24 +24,26 @@ export default function Content() {
           {portfolio.map((port) => (
             <div key={port.id} className="col-lg-4 col-md-6 ">
               <div className="text-center  text-md-start   mx-1 mx-lg-0">
-                <div className="wrapper-img  ">
-                  <div className="img-hover ">
-                    <LazyLoadImage
-                      className="img-fluid img-port"
-                      alt={port.img}
-                      src={port.img}
-                      effect="blur"
-                      afterLoad={() => setIsLoading(false)}
-                    />
+                <a href={port.url} target="_blank">
+                  <div className="wrapper-img">
+                    <div className="img-hover ">
+                      <LazyLoadImage
+                        className="img-fluid img-port"
+                        alt={port.img}
+                        src={port.img}
+                        effect="blur"
+                        afterLoad={() => setIsLoading(false)}
+                      />
+                    </div>
+                    {isLoading === false && (
+                      <LazyLoadImage
+                        className="img-fluid  img-port   project-hover"
+                        alt="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
+                        src="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
+                      />
+                    )}
                   </div>
-                  {isLoading === false && (
-                    <LazyLoadImage
-                      className="img-fluid  img-port   project-hover"
-                      alt="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
-                      src="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
-                    />
-                  )}
-                </div>
+                </a>
 
                 <div>
                   <h5 className="font-poppins portfoio-title my-3">

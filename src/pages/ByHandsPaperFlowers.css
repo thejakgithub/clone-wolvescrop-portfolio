@@ -1,0 +1,31 @@
+.bg-hand-paper::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url("https://wolvescorp.com/main/portfolio/byHandsPaperFlowers/assets/headerImg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.bg-hand-paper::after {
+  content: "";
+  position: fixed;
+  height: inherit;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(46, 39, 13, 0.1);
+  margin: 100px 50px 0 50px;
+  height: 90vh;
+  z-index: -2;
+}
+
+.header-hand-paper {
+  z-index: 10;
+  opacity: 0.5;
+}
