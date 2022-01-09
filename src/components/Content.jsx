@@ -20,13 +20,23 @@ export default function Content() {
         <div className="row g-4">
           {portfolio.map((port) => (
             <div key={port.id} className=" col-lg-4 col-md-6 ">
-              <div className="text-center text-md-start mx-1 mx-lg-0">
-                <LazyLoadImage
-                  className="img-fluid img-port  px-lg-0 pe-0 pe-md-2 "
-                  alt={port.img}
-                  src={port.img}
-                  effect="blur"
-                />
+              <div className="text-center text-md-start   mx-1 mx-lg-0">
+                <div className="wrapper-img ">
+                  <div className="img-hover ">
+                    <LazyLoadImage
+                      className="img-fluid   px-lg-0 pe-0 pe-md-2 "
+                      alt={port.img}
+                      src={port.img}
+                      effect="blur"
+                    />
+                  </div>
+
+                  <LazyLoadImage
+                    className="img-fluid  project-hover  px-lg-0 pe-0 pe-md-2 "
+                    alt="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
+                    src="https://wolvescorp.com/main/portfolio/img/project_hover.svg"
+                  />
+                </div>
 
                 <h5 className="font-poppins portfoio-title my-3">
                   {port.title}
